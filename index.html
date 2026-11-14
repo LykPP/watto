@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade do Watto</title>
+<style>
+  :root { --ink: #161717; --texto: #2f3632; --muted: #5f6b65; --linha: #e3e6e4; --fundo: #f3f4f2; --bloco: #ffffff; --marca: #f5c400; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--texto); font: 16px/1.65 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 24px 72px; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  header svg { width: 40px; height: 40px; flex: none; }
+  header b { font-size: 22px; color: var(--ink); letter-spacing: -.01em; }
+  h1 { font-size: 34px; line-height: 1.2; color: var(--ink); margin: 0 0 6px; letter-spacing: -.02em; }
+  .data { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+  .resumo { background: var(--bloco); border: 1px solid var(--linha); border-left: 4px solid var(--marca); border-radius: 12px; padding: 18px 22px; margin-bottom: 36px; }
+  .resumo p { margin: 0 0 8px; } .resumo ul { margin: 6px 0 0; padding-left: 20px; }
+  h2 { font-size: 21px; color: var(--ink); margin: 40px 0 10px; letter-spacing: -.01em; }
+  h3 { font-size: 17px; color: var(--ink); margin: 22px 0 6px; }
+  ul { padding-left: 22px; } li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; background: var(--bloco); border: 1px solid var(--linha); border-radius: 10px; overflow: hidden; font-size: 15px; margin: 10px 0; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--linha); vertical-align: top; }
+  th { background: #fafaf8; color: var(--ink); font-weight: 650; }
+  tr:last-child td { border-bottom: 0; }
+  code { background: #ecefec; border-radius: 4px; padding: 1px 5px; font-size: 14px; }
+  a { color: #7a5b00; }
+  footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--linha); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg viewBox="0 0 128 128" aria-hidden="true"><rect width="128" height="128" rx="30" fill="#f5c400"/><path d="M22 40 L42 94 L64 56 L86 94 L106 40" fill="none" stroke="#161717" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <b>Watto</b>
+  </header>
+
+  <h1>Política de Privacidade</h1>
+  <p class="data">Última atualização: 14 de novembro de 2026 · Vale para a extensão Watto (auditor de faturas de energia) para Google Chrome</p>
+
+  <div class="resumo">
+    <p><b>Em resumo</b></p>
+    <ul>
+      <li>As faturas em PDF são lidas e auditadas no seu computador. O arquivo nunca é enviado a nenhum servidor.</li>
+      <li>O histórico de faturas e as preferências ficam guardados só no seu navegador, e você pode apagá-los quando quiser.</li>
+      <li>Só o assistente com IA ("Pergunte ao Watto") envia dados para fora do seu computador: a sua pergunta e os números da fatura, sem nome, endereço, CPF, CNPJ ou número da unidade consumidora.</li>
+      <li>O Watto não vende dados, não exibe publicidade e não usa ferramentas de rastreamento.</li>
+    </ul>
+  </div>
+
+  <h2>1. Quem somos</h2>
+  <p>O Watto é uma extensão para o Google Chrome que lê faturas de energia elétrica em PDF e aponta oportunidades de economia. O responsável pela extensão e pelo tratamento dos dados descritos aqui pode ser contatado pelo e-mail <a href="mailto:lucaspegog@gmail.com">lucaspegog@gmail.com</a>.</p>
+
+  <h2>2. O que fica no seu computador</h2>
+  <p>A leitura do PDF, o reconhecimento de texto de faturas escaneadas (OCR) e todos os cálculos da auditoria acontecem dentro do navegador, no seu computador. O Watto guarda os seguintes dados no armazenamento local do Chrome:</p>
+  <table>
+    <tr><th>Dado</th><th>Para que serve</th></tr>
+    <tr><td>Dados lidos das faturas auditadas: distribuidora, mês de referência, número e nome da unidade consumidora, tarifa, itens cobrados, valores, consumo, demanda e histórico de meses</td><td>Montar o histórico, o painel de unidades e reabrir uma fatura sem precisar do PDF</td></tr>
+    <tr><td>Achados marcados como resolvidos ou ignorados e nomes dados às unidades</td><td>Lembrar as suas escolhas</td></tr>
+    <tr><td>Preferências: idioma, tema, cor e se o histórico deve ser guardado</td><td>Manter a aparência e o comportamento que você escolheu</td></tr>
+    <tr><td>Um código aleatório da instalação e a quantidade de perguntas feitas ao assistente no mês</td><td>Contar as perguntas do plano gratuito. O código não identifica você</td></tr>
+  </table>
+  <p>O arquivo PDF não é guardado. Esses dados não saem do seu computador, com a única exceção do assistente com IA, descrita na seção 3. Você pode desligar o histórico nas preferências (ícone de engrenagem), apagar uma unidade ou todo o histórico na aba Histórico, ou remover a extensão, o que apaga todos os dados guardados por ela.</p>
+
+  <h3>Fatura aberta numa aba do navegador</h3>
+  <p>Quando o painel do Watto está aberto e a aba ativa mostra um PDF, a extensão pode baixar esse arquivo para verificar se é uma fatura de energia e oferecer a auditoria. Isso só acontece em sites que você autorizou (clicando em "Permitir neste site") ou na aba em que você clicou no ícone do Watto. A leitura também acontece no seu computador, e nada é enviado.</p>
+
+  <h2>3. Assistente com IA ("Pergunte ao Watto")</h2>
+  <p>O assistente é opcional e só funciona quando você escreve uma pergunta ou clica numa pergunta sugerida. Nesse momento, o Watto envia ao seu servidor (o servidor do Watto) os seguintes dados:</p>
+  <ul>
+    <li>a sua pergunta e até 8 mensagens anteriores da mesma conversa;</li>
+    <li>um resumo da fatura com distribuidora, mês de referência, tarifa, valor total, itens cobrados com quantidades e valores, histórico de consumo e demanda de até 13 meses e os achados da auditoria com os valores estimados;</li>
+    <li>o idioma escolhido e o código aleatório da instalação (seção 2).</li>
+  </ul>
+  <p><b>Não são enviados:</b> o arquivo PDF, o nome do titular ou da unidade, endereço, CPF, CNPJ, número da unidade consumidora, número do medidor nem qualquer outro dado da fatura que identifique a pessoa ou a empresa.</p>
+
+  <h3>Quem recebe esses dados</h3>
+  <table>
+    <tr><th>Serviço</th><th>O que faz</th><th>O que guarda</th></tr>
+    <tr><td>Servidor do Watto, hospedado na Cloudflare (Cloudflare Workers)</td><td>Confere o limite de perguntas e encaminha a pergunta ao modelo de IA</td><td>Apenas o contador de perguntas por código de instalação e por mês, apagado automaticamente em até 40 dias. O endereço IP é usado por até 1 hora para impedir excesso de pedidos. Registros técnicos (erros e quantidade de texto processado) ficam por poucos dias, sem o conteúdo das conversas</td></tr>
+    <tr><td>Anthropic (API do Claude)</td><td>Gera a resposta a partir da pergunta e do resumo da fatura</td><td>Trata os dados conforme os <a href="https://www.anthropic.com/legal/commercial-terms" rel="noopener">termos comerciais</a> e a <a href="https://www.anthropic.com/legal/privacy" rel="noopener">política de privacidade</a> da Anthropic. Dados enviados pela API não são usados para treinar modelos por padrão</td></tr>
+  </table>
+  <p>Esses serviços podem processar os dados fora do Brasil. A transferência acontece apenas para prestar o serviço que você pediu, com fornecedores que adotam medidas de segurança compatíveis com a Lei Geral de Proteção de Dados (LGPD). O Watto não guarda o conteúdo das conversas: elas ficam só no painel enquanto ele está aberto.</p>
+  <p>As respostas do assistente são geradas por IA a partir dos números da fatura e são estimativas. Elas não substituem um estudo técnico nem a confirmação das condições do contrato com a distribuidora.</p>
+
+  <h2>4. Contato com especialista</h2>
+  <p>O botão "Pedir ajuda especializada" abre o seu programa de e-mail (ou o Gmail) com uma mensagem pronta, contendo a distribuidora, o mês, a tarifa e os achados da fatura. Nada é enviado automaticamente: você revisa, completa e decide se envia. Se enviar, os dados da mensagem serão usados apenas para responder ao seu pedido.</p>
+
+  <h2>5. Permissões do Chrome</h2>
+  <table>
+    <tr><th>Permissão</th><th>Uso</th></tr>
+    <tr><td><code>sidePanel</code></td><td>Mostrar o Watto no painel lateral do navegador</td></tr>
+    <tr><td><code>storage</code></td><td>Guardar no seu computador o histórico, as preferências e as marcações descritas na seção 2</td></tr>
+    <tr><td><code>activeTab</code></td><td>Ler o PDF da fatura aberta na aba em que você clicou no ícone do Watto</td></tr>
+    <tr><td>Acesso a arquivos do computador (<code>file:///*</code>)</td><td>Ler o PDF de uma fatura salva no computador e aberta numa aba do Chrome. Só funciona se você ligar "Permitir acesso aos URLs de arquivo" nos detalhes da extensão. O arquivo é lido localmente e não é enviado</td></tr>
+    <tr><td>Acesso opcional a sites</td><td>Pedido só quando você clica em "Permitir neste site", para ler PDFs de faturas abertos naquele site. Pode ser retirado a qualquer momento nas configurações da extensão</td></tr>
+  </table>
+
+  <h2>6. Compartilhamento e uso limitado</h2>
+  <p>O Watto não vende, não aluga e não compartilha dados com terceiros para publicidade, análise de crédito ou qualquer finalidade diferente das descritas aqui. Os dados recebidos pelo assistente são usados apenas para responder às suas perguntas. O uso de informações recebidas pelas APIs do Chrome segue a <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" rel="noopener">política de Uso Limitado</a> da Chrome Web Store.</p>
+
+  <h2>7. Seus direitos</h2>
+  <p>Pela LGPD, você pode pedir confirmação de tratamento, acesso, correção e eliminação dos seus dados, entre outros direitos. Como quase todos os dados ficam no seu próprio computador, você mesmo pode consultá-los e apagá-los a qualquer momento, como descrito na seção 2. O servidor do Watto guarda apenas o contador ligado a um código aleatório, que não identifica você. Para qualquer pedido ou dúvida, escreva para <a href="mailto:lucaspegog@gmail.com">lucaspegog@gmail.com</a>.</p>
+
+  <h2>8. Crianças</h2>
+  <p>O Watto é destinado a consumidores, gestores e profissionais de energia, e não é direcionado a menores de 18 anos.</p>
+
+  <h2>9. Alterações desta política</h2>
+  <p>Esta política pode ser atualizada quando a extensão mudar. A data no topo indica a versão em vigor. Mudanças que ampliem o envio de dados para fora do seu computador serão informadas na própria extensão antes de valerem.</p>
+
+  <footer>Dúvidas sobre privacidade: <a href="mailto:lucaspegog@gmail.com">lucaspegog@gmail.com</a></footer>
+</main>
+</body>
+</html>
